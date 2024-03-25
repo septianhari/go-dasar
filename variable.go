@@ -17,4 +17,19 @@ func main() {
 
 	isOnline = true
 	fmt.Println(isOnline)
+
+	fmt.Println("========================")
+
+	var (
+		name  string
+		usia  int
+		isGod bool
+	)
+
+	name = "Bobi"
+	usia = 32
+	isGod = true
+
+	fmt.Println(name, usia, isGod)
+
 }
