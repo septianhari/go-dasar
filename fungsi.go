@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//secara basic function = memiliki name-parameter dan return type
+
 func add(a int, b int) int {
 	//fmt.Println(a + b)
 	return a + b
