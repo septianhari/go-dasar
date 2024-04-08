@@ -10,25 +10,34 @@ Jika anak umur 12 tahun atau tinggi lebih dari 160 cm, akan dikenakan tarif Rp 6
 Jika di atas 12 tahun, akan mendapat tiket khusus Remaja yaitu sebesar Rp 100.000*/
 
 func TicketPlayground(height, age int) int {
+	//var price int
+
 	if age < 5 {
 		return -1
-	} else if age <= 7 || height >= 120 {
-		return 15000
-	} else if age <= 9 || height >= 135 {
-		return 25000
-	} else if age <= 11 || height >= 150 {
-		return 40000
-	} else if age <= 12 || height >= 160 {
-		return 60000
-	} else if age > 12 {
-		return 100000
-
 	}
-	return 0
+	var price = 10000
 
+	if age >= 5 || height > 120 {
+		price += 5000
+	}
+
+	if age >= 8 || height > 135 {
+		price += 10000
+	}
+
+	if age >= 10 || height > 150 {
+		price += 15000
+	}
+
+	if age >= 12 || height > 160 {
+		price += 20000
+	} else {
+		price = 100000
+	}
+
+	return price // TODO: replace this
 }
 
 func main() {
-	fmt.Println(TicketPlayground(160, 11))
-	fmt.Println(TicketPlayground(165, 10))
+	fmt.Println(TicketPlayground(120, 10))
 }
