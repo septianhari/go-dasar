@@ -11,11 +11,11 @@ func swap(a, b *int) {
 }
 
 func main() {
-	// x := 1
-	// y := 2
-	// fmt.Println("Sebelum swap", x, y)
-	// swap(&x, &y)
-	// fmt.Println("Setelah swap", x, y)
+	x := 1
+	y := 2
+	fmt.Println("Sebelum swap", x, y)
+	swap(&x, &y)
+	fmt.Println("Setelah swap", x, y)
 
 	// 	var number int
 	// 	number = 100
@@ -25,12 +25,12 @@ func main() {
 	// fmt.Println(&number)
 	// fmt.Println(*numberPointer)
 
-	var c int
-	var d *int
+	// var c int
+	// var d *int
 
-	c = 100
-	d = &c
+	// c = 100
+	// d = &c
 
-	fmt.Println("c = ", c)
-	fmt.Println("d = ", d)
+	// fmt.Println("c = ", c)
+	// fmt.Println("d = ", d)
 }
