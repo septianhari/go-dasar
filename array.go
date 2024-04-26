@@ -3,12 +3,32 @@ package main
 import "fmt"
 
 func main() {
-	var students [4]string
-	students[0] = "Har"
-	students[1] = "Bobi"
-	students[2] = "Rudi"
+
+	var students [2][3]string
+	students[0][0] = "Har"
+	students[0][1] = "Bobi"
+	students[0][2] = "Rudi"
+	students[1][0] = "Har"
+	students[1][1] = "Bobi"
+	students[1][2] = "Rudi"
 
 	fmt.Println(students)
+
+	var names [3]string
+	names[0] = "Har"
+	names[1] = "Bobi"
+	names[2] = "Rudi"
+
+	for i, name := range names {
+		fmt.Println(i, name)
+	}
+
+	// var students [4]string
+	// students[0] = "Har"
+	// students[1] = "Bobi"
+	// students[2] = "Rudi"
+
+	// fmt.Println(students)
 
 	// var numbers [6]int (//arr 1 dimensi)
 	// for i := 0; i <= 5; i++ {
