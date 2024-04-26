@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var students [3]string
+	var students [4]string
 	students[0] = "Har"
 	students[1] = "Bobi"
 	students[2] = "Rudi"
