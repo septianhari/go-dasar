@@ -21,4 +21,13 @@ func main() {
 	newNames = append(newNames, "Owi")
 	fmt.Println(newNames)
 
+	//ubah yang Bobi
+	for i, name := range names {
+		if name == "Bobi" {
+			names[i] = "Har"
+		} else {
+			fmt.Println(name)
+		}
+	}
+
 }
