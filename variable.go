@@ -21,15 +21,17 @@ func main() {
 	fmt.Println("========================")
 
 	var (
-		name  string
-		usia  int
-		isGod bool
+		name    string
+		usia    int
+		isGod   bool
+		address string
 	)
 
 	name = "Bobi"
 	usia = 32
 	isGod = true
+	address = "jakarta"
 
-	fmt.Println(name, usia, isGod)
+	fmt.Println(name, usia, isGod, address)
 
 }
