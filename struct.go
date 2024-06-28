@@ -20,6 +20,10 @@ func (s Student) SayAddress() {
 	fmt.Println("Address", s.Address)
 }
 
+func (s Student) SayName() {
+	fmt.Println("Name", s.Name)
+}
+
 func main() {
 
 	// var student Student
@@ -32,4 +36,6 @@ func main() {
 	student.SayHello()
 	student.SayAge()
 	student.SayAddress()
+
+	student.SayName()
 }
