@@ -16,4 +16,6 @@ func main() {
 	fmt.Println("hallo"[3])
 	fmt.Println(string(108))
 
+	fmt.Println("hallo" + "go")
+
 }

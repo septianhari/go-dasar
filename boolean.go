@@ -8,4 +8,5 @@ func main() {
 	//canPlayGame := hasEaten && hasStudy
 	canPlayGame := hasEaten || hasStudy
 	fmt.Println(canPlayGame)
+
 }
