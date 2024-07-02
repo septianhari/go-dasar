@@ -23,6 +23,28 @@ func main() {
 	age := 15
 	salary := 4000
 
+	// If condition
+	if age > 18 {
+		fmt.Println("Usia Anda melebihi 18 tahun.")
+	}
+
+	if salary > 2000 {
+		fmt.Println("Gaji Anda melebihi 2000.")
+	}
+
+	// If-else condition
+	if age > 18 {
+		fmt.Println("Usia Anda melebihi 18 tahun.")
+	} else {
+		fmt.Println("Usia Anda kurang dari atau sama dengan 18 tahun.")
+	}
+
+	if salary > 2000 {
+		fmt.Println("Gaji Anda melebihi 2000.")
+	} else {
+		fmt.Println("Gaji Anda tidak melebihi 2000.")
+	}
+
 	// Nested condition
 	if age > 18 {
 		fmt.Println("Usia Anda melebihi 18 tahun.")
