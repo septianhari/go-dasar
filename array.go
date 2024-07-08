@@ -12,6 +12,16 @@ func main() {
 	students[1][1] = "Bobi"
 	students[1][2] = "Rudi"
 
+	fmt.Println(students[0][0])
+
+	fmt.Println(students[1][2])
+
+	fmt.Println(students[0])
+
+	fmt.Println(students[1])
+
+	fmt.Println(students[0][0], students[0][1], students[0][2])
+
 	fmt.Println(students)
 
 	var names [3]string
