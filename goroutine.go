@@ -15,4 +15,5 @@ func main() {
 	fmt.Println("Before sleep")
 	time.Sleep(10 * time.Millisecond) // menunggu 10 milli-second agar go routine berjalan
 	fmt.Println("main stoped")
+
 }
