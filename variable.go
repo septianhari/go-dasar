@@ -4,34 +4,12 @@ import "fmt"
 
 func main() {
 
-	// var age uint
-	// age = 30
-	// fmt.Println(age)
+	var name string
 
-	nama, umur, negara := "Har", 22, "Indonesia"
-	fmt.Println(nama)
-	fmt.Println(umur)
-	fmt.Println(negara)
+	name = "Har Sabarno"
+	fmt.Println(name)
 
-	var isOnline bool
-
-	isOnline = true
-	fmt.Println(isOnline)
-
-	fmt.Println("========================")
-
-	var (
-		name    string
-		usia    int
-		isGod   bool
-		address string
-	)
-
-	name = "Bobi"
-	usia = 32
-	isGod = true
-	address = "jakarta"
-
-	fmt.Println(name, usia, isGod, address)
+	name = "Har Septian"
+	fmt.Println(name)
 
 }
