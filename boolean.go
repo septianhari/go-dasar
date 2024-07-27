@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	hasEaten := !false
-	hasStudy := !true
-	//canPlayGame := hasEaten && hasStudy
-	canPlayGame := hasEaten || hasStudy
-	fmt.Println(canPlayGame)
 
+	var name1 = "budi"
+	var name2 = "budi"
+
+	var result = name1 == name2
+	fmt.Println(result)
 }
