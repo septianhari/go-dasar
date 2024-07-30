@@ -1,11 +1,18 @@
 package main
 
-func Penjumlahan(a int, b int) int {
+import "fmt"
 
-	return a + b
+func sayHello() {
+	fmt.Println("Hello")
+}
+
+func add(x, y, z int) int {
+	return x + y + z
 }
 
 func main() {
-	result := Penjumlahan(10, 20)
-	println(result)
+	sayHello()
+
+	fmt.Println(add(1, 2, 6))
+	fmt.Println(add(10, 24, 73))
 }

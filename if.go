@@ -3,58 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	// hasCreative := true
-	// if hasCreative {
-	// 	fmt.Println("I have creative")
-	// }
-	// fmt.Println("End")
 
-	// grade := 0
-	// if grade >= 80 {
-	// 	fmt.Println("cakep")
-	// } else if grade <= 80 {
-	// 	fmt.Println("lumayan")
-	// } else {
-	// 	fmt.Println("hmmm")
-	// }
-	// fmt.Println("selesai")
-
-	// Deklarasi variabel
-	age := 15
-	salary := 4000
-
-	// If condition
-	if age > 18 {
-		fmt.Println("Usia Anda melebihi 18 tahun.")
-	}
-
-	if salary > 2000 {
-		fmt.Println("Gaji Anda melebihi 2000.")
-	}
-
-	// If-else condition
-	if age > 18 {
-		fmt.Println("Usia Anda melebihi 18 tahun.")
+	if name := "Jokoy"; name == "Eko" {
+		fmt.Println("Hello Eko")
+	} else if name == "Joko" {
+		fmt.Println("Hello Joko")
+	} else if name == "Har" {
+		fmt.Println("Hello Har")
 	} else {
-		fmt.Println("Usia Anda kurang dari atau sama dengan 18 tahun.")
+		fmt.Println("Hi, unknown")
 	}
 
-	if salary > 2000 {
-		fmt.Println("Gaji Anda melebihi 2000.")
-	} else {
-		fmt.Println("Gaji Anda tidak melebihi 2000.")
-	}
+	fmt.Println("=============================")
 
-	// Nested condition
-	if age > 18 {
-		fmt.Println("Usia Anda melebihi 18 tahun.")
-
-		if salary > 2000 {
-			fmt.Println("Gaji Anda melebihi 2000.")
-		} else {
-			fmt.Println("Gaji Anda tidak melebihi 2000.")
-		}
+	name := "Saeful"
+	if length := len(name); length > 5 {
+		fmt.Println("Nama kepanjang")
 	} else {
-		fmt.Println("Usia Anda kurang dari atau sama dengan 18 tahun.")
+		fmt.Println("Nama kependek")
 	}
 }
