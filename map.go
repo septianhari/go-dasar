@@ -2,39 +2,26 @@ package main
 
 import "fmt"
 
-
-scoreMap := map[string]string {
-    "A": "100-86",
-    "B": "75-86",
-    "C": "50-74",
-    "D": "30-49",
-    "E": "0-29",
-}
-
-score := scoreMap["A"]
-fmt.Println(score)
-
-func transtlateIdToEN(word string) string {
-	// indonesia := []string{"satu", "dua", "tiga"}
-	// english := []string{"one", "two", "three"}
-
-	// for i, id := range indonesia {
-	// 	if id == word {
-	// 		return english[i]
-	// 	}
-	// }
-	// return ""
-
-	idToEn := map[string]string{
-
-		"satu": "one",
-		"dua":  "two",
-		"tiga": "three",
-	}
-	return idToEn[word]
-}
-
 func main() {
-	//fmt.Println(transtlateIdToEN("satu"))
-	fmt.Println(transtlateIdToEN("tiga"))
+
+	person := map[string]string{
+		"name":    "John",
+		"address": "123 Main St",
+	}
+	fmt.Println(person["name"])
+	fmt.Println(person["address"])
+	fmt.Println(person)
+
+	fmt.Println("=========================")
+
+	book := make(map[string]string)
+	book["title"] = "Harry Potter"
+	book["author"] = "J.K. Rowling"
+	book["year"] = "1997"
+	delete(book, "year")
+	fmt.Println(book)
+	fmt.Println(len(book))
+	delete(book, "year")
+	fmt.Println(book)
+	fmt.Println(len(book))
 }
