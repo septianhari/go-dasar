@@ -2,40 +2,37 @@ package main
 
 import "fmt"
 
-type Student struct {
-	Name    string
-	Age     int
-	Address string
+type Customer struct {
+	Name, Address string
+	Age           int
 }
 
-func (s Student) SayHello() {
-	fmt.Println("Hello", s.Name)
-}
-
-func (s Student) SayAge() {
-	fmt.Println("Age", s.Age)
-}
-
-func (s Student) SayAddress() {
-	fmt.Println("Address", s.Address)
-}
-
-func (s Student) SayName() {
-	fmt.Println("Name", s.Name)
+func (customer Customer) sayHi(name string) {
+	fmt.Println("Hello", name, "My name is", customer.Name)
 }
 
 func main() {
+	var customer Customer
+	customer.Name = "Har"
+	customer.Address = "Jakarta"
+	customer.Age = 22
+	fmt.Println(customer)
 
-	// var student Student
-	var student Student
-	student.Name = "Har"
-	student.Age = 22
-	student.Address = "Jakarta"
-	fmt.Println(student)
+	fmt.Println(customer.Name)
 
-	student.SayHello()
-	student.SayAge()
-	student.SayAddress()
+	Atun := Customer{
+		Name:    "Atun",
+		Address: "Jakarta",
+		Age:     22,
+	}
+	fmt.Println(Atun)
 
-	student.SayName()
+	Atun2 := Customer{"Atun", "Jakarta", 22}
+	fmt.Println(Atun2)
+
+	Har := Customer{"Har", "Jakarta", 22}
+	fmt.Println(Har)
+
+	Atun2.sayHi("Hari")
+	Har.sayHi("Syifa")
 }
