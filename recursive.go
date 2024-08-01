@@ -2,31 +2,22 @@ package main
 
 import "fmt"
 
-func countDown(n int) {
-	//lebih simpel dari menggunakan loop
-	fmt.Println(n)
-	// base condition
-	if n == 0 {
-		return
+func factorialLoop(n int) int {
+	result := 1
+	for i := n; i > 0; i-- {
+		result *= i
 	}
-	countDown(n - 1)
-
-	//infinity loop
-	// for i := n; i >= 0; i-- {
-	// 	fmt.Println(i)
-	// }
+	return result
 }
 
-func factorial(n int) int {
+func factorialRecursive(n int) int {
 	if n == 1 {
-		//base condition
 		return 1
 	}
-	return n * factorial(n-1)
+	return n * factorialRecursive(n-1)
 }
 
 func main() {
-	countDown(3)
-
-	fmt.Println(factorial(4))
+	fmt.Println(factorialLoop(3))
+	fmt.Println(factorialRecursive(6))
 }
