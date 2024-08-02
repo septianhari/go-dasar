@@ -2,35 +2,17 @@ package main
 
 import "fmt"
 
-func swap(a, b *int) {
-	c := *a
-	*a = *b
-	*b = c
-
-	fmt.Println("Di dalam swap", *a, *b)
+type Address struct {
+	City, State, Country string
 }
 
 func main() {
-	x := 1
-	y := 2
-	fmt.Println("Sebelum swap", x, y)
-	swap(&x, &y)
-	fmt.Println("Setelah swap", x, y)
 
-	// 	var number int
-	// 	number = 100
-	// 	var numberPointer *int
-	// 	numberPointer = &number
+	address1 := Address{"Jakarta", "DKI Jakarta", "Indonesia"}
+	address2 := &address1
 
-	// fmt.Println(&number)
-	// fmt.Println(*numberPointer)
+	address2.City = "Bandung"
+	fmt.Println(address1)
+	fmt.Println(address2)
 
-	// var c int
-	// var d *int
-
-	// c = 100
-	// d = &c
-
-	// fmt.Println("c = ", c)
-	// fmt.Println("d = ", d)
 }
