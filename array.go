@@ -4,6 +4,10 @@ import "fmt"
 
 func main() {
 
+	var numbers = [...]int{1, 2, 3, 4, 5, 6, 7}
+	fmt.Println(numbers)
+	fmt.Println("jumlah element", len(numbers))
+
 	var students [2][3]string
 	students[0][0] = "Har"
 	students[0][1] = "Bobi"
