@@ -16,5 +16,4 @@ func main() {
 	//tambahkan prediksi umur untuk 5 tahun ke depan
 	age += 5
 	fmt.Printf("In 5 years, you will be %d years old.\n", age)
-
 }
