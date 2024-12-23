@@ -6,6 +6,13 @@ import (
 
 func main() {
 
+	var number int8 = 10
+	number2 := 111
+	number = 20
+
+	fmt.Println(number2)
+	fmt.Println(number)
+
 	//var name string
 
 	// var name = "Har Sabarno"
